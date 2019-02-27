@@ -41,7 +41,7 @@ double payoff(double S, double strikePrice) {
 }
 
 void parse_opt(OptionData &opt, char &ot, char *name, const std::string &in) {
-  sscanf(in.c_str(), "%s %lf %lf %lf %lf %lf %lf %c %lf %lf", name,  //
+  sscanf(in.c_str(), "%127s %lf %lf %lf %lf %lf %lf %c %lf %lf", name,  //
          &opt.s, &opt.strike, &opt.r, &opt.divq, &opt.v, &opt.t,     //
          &ot, &opt.divs, &opt.DGrefval);
 }
